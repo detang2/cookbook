@@ -6,9 +6,17 @@
     height: 100%;
     width: 70px; 
     position: fixed; 
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
     /* text-align: center; */
+}
+
+.nav img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact{
@@ -24,14 +32,6 @@
     transition: all ease 1s;
 }
 
-#contact_icon img{
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #contact_icon img:hover{
     opacity: 0;
 
@@ -45,41 +45,16 @@
 }
 
 .dishes{
-    padding: 10px 0;
-}
-
-#dishes_icon img{
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 15px 0;
 }
 
 .desserts{
-    padding: 10px 0;
-}
-
-#desserts_icon img{
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 15px 0;
 }
 
 .favorites{
-    padding: 10px 0;
+    padding: 15px 0;
 }
-
-#favorites_icon img{
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 /* Content */
 body{
@@ -90,18 +65,20 @@ body{
 }
 
 h1{
-    padding: 40px 0 0 150px;
-    font-size: 3em;
+    padding: 60px 0 0 150px;
+    font-size: 2.5em;
 }
 
 .foodimages{
     margin-left: 10%;
-    padding: 5% 5% 5% 5%;
+    padding: 40px 30px;
     display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .foodimages img {
-    width: 350px;
+    width: 320px;
+    overflow: hidden;
 }f
 
 /* Footer */
