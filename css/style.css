@@ -11,6 +11,18 @@
     /* text-align: center; */
 }
 
+#navcon{
+    background-color: #F8CABC;
+}
+
+#navdes{
+    background-color: #FABF9F;
+}
+
+#navfav{
+    background-color: #FFEBA5;
+}
+
 .nav img{
     display: block;
     width: 40px;
@@ -69,20 +81,46 @@ h1{
     font-size: 2.5em;
 }
 
+#favfnf{
+    padding: 5px 0 0 150px;
+}
+
 .foodimages{
     margin-left: 10%;
     padding: 40px 30px;
     display: grid;
+    justify-content: start;
     grid-template-columns: auto auto auto;
 }
 
 .foodimages img {
+    object-fit: cover;
     width: 320px;
-    overflow: hidden;
-}f
+    height: 220px;
+}
 
 /* Footer */
 footer{
+    font-size: 13px;
     text-align: center;
     padding: 20px;
 }
+
+/* Skip */
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    text-decoration: none;
+    color: #707070;
+  }
+  
+  .skip a:focus{
+    top: 10px;
+    left: 10px;
+  }
