@@ -97,15 +97,6 @@ h1{
     height: 220px;
 }
 
-/* Contact Forms */
-.lets_talk{
-    padding: 40px 0 1000px 0;
-}
-
-.join_meal{
-    padding: 40px 0;
-}
-
 /* Footer */
 footer{
     font-size: 13px;
@@ -131,3 +122,42 @@ footer{
     top: 10px;
     left: 10px;
   }
+
+/* Contact Forms */
+.lets_talk{
+    padding: 40px 0;
+}
+
+.join_meal{
+    padding: 40px 0 270px 0;
+}
+
+input, textarea{
+    width: 250px;
+    height: 40px;
+    border: 0;
+    border-bottom: #707070 solid 1px;
+}
+
+input{
+    margin: 0 0 20px 0;
+}
+
+button{
+    border: #707070 solid 1px;
+    padding: 5px 20px;
+    margin: 20px 0 0 0;
+    font-family: 'Kefa', 'Helvetica', 'Calibri', 'Arial', sans-serif;
+    color: #707070;
+    font-size: 1em;
+}
+
+button:hover{
+    background-color: #707070;
+    color: white;
+}
+
+#secret{
+    padding: 100px 0 500px 0;
+    color: lightgrey;
+}
