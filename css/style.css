@@ -76,18 +76,16 @@ body{
     color: #707070;
 }
 
-h1{
+.content{
     padding: 60px 0 0 150px;
+}
+
+h1{
     font-size: 2.5em;
 }
 
-#favfnf{
-    padding: 5px 0 0 150px;
-}
-
 .foodimages{
-    margin-left: 10%;
-    padding: 40px 30px;
+    padding: 40px 0;
     display: grid;
     justify-content: start;
     grid-template-columns: auto auto auto;
@@ -97,6 +95,15 @@ h1{
     object-fit: cover;
     width: 320px;
     height: 220px;
+}
+
+/* Contact Forms */
+.lets_talk{
+    padding: 40px 0 1000px 0;
+}
+
+.join_meal{
+    padding: 40px 0;
 }
 
 /* Footer */
