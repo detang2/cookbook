@@ -6,14 +6,38 @@
     <!-- <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/> -->
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/icons/icons_color2.png"/>
     <title>Casually Documenting Some Food</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160542334-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-160542334-1');
+    </script>
 </head>
 <body>
 <main>
+<div id="loader" style="display:none;"></div>
 <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
     <div class="nav" id="navfav">
         <ul>
+            <li class="contact">
+                <div id="contact_icon"><a href="contact.html">Contact</a></div>
+            </li>
+            <li class="dishes">
+                <a href="index.html">
+                <div id="dishes_icon"><img src="images/icons/icons2.png" alt="navigation icon of a food tray for main dish">Dishes</div>
+                </a></li>
+            <li class="desserts"><a href="desserts.html">
+                <div id="desserts_icon"><img src="images/icons/icons3.png" alt="navigation icon of a cookie for desserts">Desserts</div>
+                </a></li>
+            <li class="favorites"><a href="favorites.html">
+                <div id="favorites_icon"><img src="images/icons/icons4.png" alt="navigation icon of a star for favorites">Favorites</div>
+                </a></li>
+        </ul>
+        <!-- <ul>
             <li class="contact"><a href="contact.html" class="contact">
                 <div id="contact_icon"><img src="images/icons/icons1.png" alt="navigation icon of a chair for contact"></div>
                 </a></li>
@@ -26,7 +50,7 @@
             <li class="favorites"><a href="favorites.html" class="favorites">
                 <div id="favorites_icon"><img src="images/icons/icons4.png" alt="navigation icon of a star for favorites"></div>
                 </a></li>
-        </ul>
+        </ul> -->
     </div>
     </header>
     <div class="content" id="main">
@@ -37,43 +61,99 @@
             By Family & Friends
         </p>
         <div class="foodimages">
-        <div>
-        <img src="images/favorites/f1.jpg" alt="Image of Beef Noodle Soup by Justin">
-        <p>Beef Noodle Soup by Justin</p>
+        <div class="flip-card" tabindex="0">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="images/favorites/f1.jpg" alt="Image of Beef Noodle Soup by Justin">
+                </div>
+                <div class="flip-card-back">
+                <h2>by Justin</h2>
+                </div>
+            </div>
+            <p>Beef Noodle Soup</p>
         </div>
-        <div>
-        <img src="images/favorites/f2.jpg" alt="Image of Pineapple with Pork by Derek">
-        <p>Pineapple with Pork by Derek</p>
+        <div class="flip-card" tabindex="0">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="images/favorites/f2.jpg" alt="Image of Pineapple with Pork by Derek">
+                </div>
+                <div class="flip-card-back">
+                <h2>by Derek</h2>
+                </div>
+            </div>
+            <p>Pineapple with Pork by Derek</p>
         </div>
-        <div>
-        <img src="images/favorites/f3.jpg" alt="Image of Congee by Jasmine">
-        <p>Congee by Jasmine</p>
+        <div class="flip-card" tabindex="0">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="images/favorites/f3.jpg" alt="Image of Congee by Jasmine">
+                </div>
+                <div class="flip-card-back">
+                <h2>by Jasmine</h2>
+                </div>
+            </div>
+            <p>Congee</p>
         </div>
-        <div>
-        <img src="images/favorites/f4.jpg" alt="Image of Orange Cake by Vivian">
-        <p>Orange Cake by Vivian</p>
+        <div class="flip-card" tabindex="0">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="images/favorites/f4.jpg" alt="Image of Orange Cake by Vivian">
+                </div>
+                <div class="flip-card-back">
+                <h2>by Vivian</h2>
+                </div>
+            </div>
+            <p>Orange Cake</p>
         </div>
-        <div>
-        <img src="images/favorites/f5.jpg" alt="Image of Onigirazu by Vivian">
-        <p>Onigirazu by Vivian</p>
+        <div class="flip-card" tabindex="0">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="images/favorites/f5.jpg" alt="Image of Onigirazu by Vivian">
+                </div>
+                <div class="flip-card-back">
+                <h2>by Vivian</h2>
+                </div>
+            </div>
+            <p>Onigirazu</p>
         </div>
-        <div>
-        <img src="images/favorites/f6.jpg" alt="Image of Steak Dinner by Justin">
-        <p>Steak Dinner by Justin</p>
+        <div class="flip-card" tabindex="0">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="images/favorites/f6.jpg" alt="Image of Steak Dinner by Justin">
+                </div>
+                <div class="flip-card-back">
+                <h2>by Justin</h2>
+                </div>
+            </div>
+            <p>Steak Dinner</p>
         </div>
-        <div>
-        <img src="images/favorites/f7.jpg" alt="Image of Chicken Soup by Justin">
-        <p>Chicken Soup by Justin</p>
+        <div class="flip-card" tabindex="0">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="images/favorites/f7.jpg" alt="Image of Chicken Soup by Justin">
+                </div>
+                <div class="flip-card-back">
+                <h2>by Justin</h2>
+                </div>
+            </div>
+            <p>Chicken Soup</p>
         </div>
-        <div>
-        <img src="images/favorites/f8.jpg" alt="Image of Shrimp Pasta by Justin">
-        <p>Shrimp Pasta by Justin</p>
+        <div class="flip-card" tabindex="0">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="images/favorites/f8.jpg" alt="Image of Shrimp Pasta by Justin">
+                </div>
+                <div class="flip-card-back">
+                <h2>by Justin</h2>
+                </div>
+            </div>
+            <p>Shrimp Pasta</p>
         </div>
     </div>
     </div>
 </main>
-</body>
 <footer>
     <p>© 2020 Esther’s Cookbook/Menu/Diary/539PortfolioProject</p>
 </footer>
+</body>
 </html>

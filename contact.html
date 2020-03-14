@@ -6,55 +6,80 @@
     <!-- <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/> -->
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>Casually Documenting Some Food</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160542334-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-160542334-1');
+    </script>
 </head>
 <body>
 <main>
+<div id="loader" style="display:none;"></div>
 <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
     <div class="nav" id="navcon">
         <ul>
-            <li class="contact"><a href="contact.html" class="contact">
-                <div id="contact_icon"><img src="images/icons/icons1.png" alt="navigation icon of a chair for contact"></div>
+            <li class="contact">
+                <div id="contact_icon"><a href="contact.html">Contact</a></div>
+            </li>
+            <li class="dishes">
+                <a href="index.html">
+                <div id="dishes_icon"><img src="images/icons/icons2.png" alt="navigation icon of a food tray for main dish">Dishes</div>
                 </a></li>
-            <li class="dishes"> <a href="index.html" class="dishes">
-                <div id="dishes_icon"><img src="images/icons/icons2.png" alt="navigation icon of a food tray for main dish"></div>
+            <li class="desserts"><a href="desserts.html">
+                <div id="desserts_icon"><img src="images/icons/icons3.png" alt="navigation icon of a cookie for desserts">Desserts</div>
                 </a></li>
-            <li class="desserts"><a href="desserts.html" class="desserts">
-                <div id="desserts_icon"><img src="images/icons/icons3.png" alt="navigation icon of a cookie for desserts"></div>
-                </a></li>
-            <li class="favorites"><a href="favorites.html" class="favorites">
-                <div id="favorites_icon"><img src="images/icons/icons4.png" alt="navigation icon of a star for favorites"></div>
+            <li class="favorites"><a href="favorites.html">
+                <div id="favorites_icon"><img src="images/icons/icons4.png" alt="navigation icon of a star for favorites">Favorites</div>
                 </a></li>
         </ul>
     </div>
     </header>
     <div class="content" id="main">
-        <h1>
-            Let's Talk!
-        </h1>
+        <div class="join_me_animation">
+            <div class="container">
+              <h1 class="text">
+                Join me to 
+              </h1>
+              <!-- <br> -->
+              <ul class="list">
+                <li class="item">a meal!</li>
+                <li class="item">a conversation!</li>
+                <li class="item">celebrate!</li>
+                <li class="item">have a good time!</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            Along with my cat Jellybean
+          </p>
         <form class="lets_talk" action="https://formspree.io/xgeyddwz" method="POST">
             <label>Name<br><input type="text" name="name"></label><br>
             <label>Email<br><input type="text" name="_replyto"></label><br>
             <label>Message<br><textarea name="message"></textarea></label><br>
             <button type="submit">Submit</button>
         </form>
-        <p id="secret">
-            There's a secret form, scroll down
-        </p>
-        <h1>
-            Join me to a meal
-        </h1>
-        <form class="join_meal" action="https://formspree.io/xgeyddwz" method="POST">
-            <label>Name<br><input type="text" name="name"></label><br>
-            <label>Email<br><input type="text" name="_replyto"></label><br>
-            <label>Message<br><textarea name="message"></textarea></label><br>
-            <button type="submit">Submit</button>
-        </form>
+        <div class="signature"></div>
+        <div class="gallery">
+            <img src="images/gallery/jb1.jpg" alt="jellybean on the floor">
+            <img src="images/gallery/jb2.jpg" alt="jellybean curled up sleeping">
+            <img src="images/gallery/jb3.jpg" alt="jellybean on her belly looking at camera">
+            <img src="images/gallery/jb4.jpg" alt="jellybean with toy looking at camera">
+            <img src="images/gallery/jb5.jpg" alt="jellybean watching tv">
+            <img src="images/gallery/jb6.jpg" alt="jellybean sleeping covering her eyes">
+            <img src="images/gallery/jb7.jpg" alt="jellybean in an open box">
+            <img src="images/gallery/jb8.jpg" alt="jellybean looking to the side">
+            <img src="images/gallery/jb9.jpg" alt="jellybean sitting on person's lap">
+        </div>
     </div>
 </main>
-</body>
 <footer>
     <p>© 2020 Esther’s Cookbook/Menu/Diary/539PortfolioProject</p>
 </footer>
+</body>
 </html>
