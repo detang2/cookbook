@@ -25,28 +25,51 @@
     <div class="nav" id="navcon">
         <ul>
             <li class="contact">
-                <div id="contact_icon"><a href="contact.html">Contact</a></div>
+                <div id="contact_icon" class="current">
+                    <a href="contact.html">
+                    <img src="images/icons/icons1.png" class="nav_normal" alt="navigation icon for contact">
+                    <img src="images/icons/icons_color1.png" class="nav_hover" alt="navigation icon for contact on hover or current">
+                    <p>Contact</p>
+                    </a>
+                </div>
             </li>
             <li class="dishes">
-                <a href="index.html">
-                <div id="dishes_icon"><img src="images/icons/icons2.png" alt="navigation icon of a food tray for main dish">Dishes</div>
-                </a></li>
-            <li class="desserts"><a href="desserts.html">
-                <div id="desserts_icon"><img src="images/icons/icons3.png" alt="navigation icon of a cookie for desserts">Desserts</div>
-                </a></li>
-            <li class="favorites"><a href="favorites.html">
-                <div id="favorites_icon"><img src="images/icons/icons4.png" alt="navigation icon of a star for favorites">Favorites</div>
-                </a></li>
+                <div id="dishes_icon">
+                    <a href="index.html">
+                    <img src="images/icons/icons2.png" class="nav_normal" alt="navigation icon of a food tray for main dish">
+                    <img src="images/icons/icons_color2.png" class="nav_hover" alt="navigation icon of a food tray for main dish on hover or current">
+                    <p>Dishes</p>
+                    </a>
+                </div>
+            </li>
+            <li class="desserts">
+                <div id="desserts_icon">
+                    <a href="desserts.html">
+                    <img src="images/icons/icons3.png" class="nav_normal" alt="navigation icon of a cookie for desserts">
+                    <img src="images/icons/icons_color3.png" class="nav_hover" alt="navigation icon of a cookie for desserts">
+                    <p>Desserts</p>
+                    </a>
+                </div>
+            </li>
+            <li class="favorites">
+                <div id="favorites_icon">
+                    <a href="favorites.html">
+                    <img src="images/icons/icons4.png" class="nav_normal" alt="navigation icon of a star for favorites">
+                    <img src="images/icons/icons_color4.png" class="nav_hover" alt="navigation icon of a star for favorites">
+                    <p>Favorites</p>
+                    </a>
+                </div>
+            </li>
         </ul>
     </div>
     </header>
     <div class="content" id="main">
+        <div class="signature">
         <div class="join_me_animation">
             <div class="container">
               <h1 class="text">
                 Join me to 
               </h1>
-              <!-- <br> -->
               <ul class="list">
                 <li class="item">a meal!</li>
                 <li class="item">a conversation!</li>
@@ -59,22 +82,22 @@
             Along with my cat Jellybean
           </p>
         <form class="lets_talk" action="https://formspree.io/xgeyddwz" method="POST">
-            <label>Name<br><input type="text" name="name"></label><br>
-            <label>Email<br><input type="text" name="_replyto"></label><br>
-            <label>Message<br><textarea name="message"></textarea></label><br>
+            <div class="form_input"><label>Name<br><input class="entry" type="text" name="name" placeholder="Your Name"></label></div>
+            <div class="form_input"><label>Email<br><input class="entry" type="email" name="email" placeholder="Your Email Address"></label></div>
+            <div class="form_input"><label>Message<br><textarea class="entry" id="message" name="message" placeholder="Your Message"></textarea></label></div>
             <button type="submit">Submit</button>
         </form>
-        <div class="signature"></div>
+        </div>
         <div class="gallery">
-            <img src="images/gallery/jb1.jpg" alt="jellybean on the floor">
-            <img src="images/gallery/jb2.jpg" alt="jellybean curled up sleeping">
-            <img src="images/gallery/jb3.jpg" alt="jellybean on her belly looking at camera">
-            <img src="images/gallery/jb4.jpg" alt="jellybean with toy looking at camera">
-            <img src="images/gallery/jb5.jpg" alt="jellybean watching tv">
-            <img src="images/gallery/jb6.jpg" alt="jellybean sleeping covering her eyes">
-            <img src="images/gallery/jb7.jpg" alt="jellybean in an open box">
-            <img src="images/gallery/jb8.jpg" alt="jellybean looking to the side">
-            <img src="images/gallery/jb9.jpg" alt="jellybean sitting on person's lap">
+            <img src="images/gallery/jb1.jpg" class="bean_grow" alt="jellybean on the floor">
+            <img src="images/gallery/jb2.jpg" class="bean_grow" alt="jellybean curled up sleeping">
+            <img src="images/gallery/jb3.jpg" class="bean_grow" alt="jellybean on her belly looking at camera">
+            <img src="images/gallery/jb4.jpg" class="bean_grow" alt="jellybean with toy looking at camera">
+            <img src="images/gallery/jb5.jpg" class="bean_grow" alt="jellybean watching tv">
+            <img src="images/gallery/jb6.jpg" class="bean_grow" alt="jellybean sleeping covering her eyes">
+            <img src="images/gallery/jb7.jpg" class="bean_grow" alt="jellybean in an open box">
+            <img src="images/gallery/jb8.jpg" class="bean_grow" alt="jellybean looking to the side">
+            <img src="images/gallery/jb9.jpg" class="bean_grow" alt="jellybean sitting on person's lap">
         </div>
     </div>
 </main>
