@@ -1,34 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 body{
-  font-family: 'Kefa', 'Helvetica', 'Calibri', 'Arial', sans-serif; 
-  /* need to change to google font in the future */
+  font-family: 'Kefa', 'Merriweather', 'Helvetica', 'Calibri', 'Arial', sans-serif; 
   font-size: 1em;
   color: #707070;
 }
 
-/* Nav */
+/* Navigation */
 .nav{
   position: fixed;
-  background-color: #D9EDFF;
-  padding: 20px 0;
-  height: 65px;
+  top: 0;
   width: 100%;
+  padding: 20px 0;
   text-align: center;
-  /* justify-content: space-between; */
+  background-color: #D9EDFF;
 }
+
+.current{
+  width: 100px;
+  margin-right: auto ;
+  margin-left: auto;
+  padding: 7px;
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: underline;
+}
+
+.dishes, .desserts, .favorites{
+  padding: 1px;
+}
+
+.contact:hover, .dishes:hover, .desserts:hover, .favorites:hover{
+  text-decoration: underline;
+}
+
 
 a{
   text-decoration: none;
   color: black;
 }
-
-a:hover{
-  color: blue;
-  /* background-color: #FABF9F; */
-}
-/* 
-a:active{
-  background: white;
-} */
 
 .nav li{
   list-style: none;
@@ -61,7 +71,7 @@ h1{
 }
 
 .content{
-  padding: 130px 0 0 0;
+  padding: 160px 0 0 0;
   text-align: center;
 }
 
@@ -77,6 +87,20 @@ h1{
     object-fit: cover;
     width: 296px;
     height: 203.5px;
+    background-color: lightgrey;
+}
+
+.floating:hover {  
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  65%  { transform: translate(0, -10px); }
+  100%   { transform: translate(0, 0px); }    
 }
 
 /* Footer */
@@ -122,7 +146,21 @@ input, textarea{
 }
 
 input{
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
+}
+
+.entry{
+  font-family: 'Kefa';
+  font-size: 1em;
+}
+
+#message{
+  padding-top: 15px;
+}
+
+.entry::placeholder{
+  color: #afafaf ;
+  text-align: center;
 }
 
 button{
@@ -156,19 +194,38 @@ button:hover{
   padding-right: 10px;
   width: 200px;
   height: 200px;
+  background-color: transparent;
 }
 
-/* Signature Parallax */
-.signature{
-  background-image: url("../images/signature.png");
-  height: 900px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;            
+.bean_grow:hover{
+  -webkit-animation: growing_bean 3s 1;
+  animation: growing_bean 3s 1;
+}
+
+@-webkit-keyframes growing_bean{
+  0%, 100% {
+    width: 200px;
+    height: 200px;
+  }
+  50% {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@keyframes growing_bean{
+  0%, 100% {
+    width: 200px;
+    height: 200px;
+  }
+  50% {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /* Join Me Animation */
+
   .container {
       overflow: hidden;
       height: 45px;
@@ -295,113 +352,173 @@ h2{
     font-weight: 100;
 }
 
-@media all and (min-width: 850px){
-/* Navigation bar */
-.nav{
-  position: fixed;
-  background-color: #D9EDFF;
-  padding: 20px 10px;
-  height: 100%;
-  width: 70px; 
+/* tablet view */
+@media all and (min-width: 768px) {
+  /* nav tab */
+  .nav{
+    padding: 20px 10px;
+    height: 100%;
+    width: 70px; 
+    position: fixed;
+  }
+
+  .current{
+    padding: 15px 100px 15px 15px;
+    width: 0;
+  }
+  
+  .nav p{
+    display: none;
+  }
+  
+  #navcon{
+    background-color: #F8CABC;
+  }
+  
+  #navdes{
+    background-color: #FABF9F;
+  }
+  
+  #navfav{
+    background-color: #FFEBA5;
+  }
+  
+  .nav img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+  }
+  
+  .contact{
+    padding: 60px 0 80px 0;
+  }
+  
+  
+  #contact_icon .nav_hover {
+    display: none;
+  }
+  
+  #contact_icon:hover .nav_normal {
+    display: none;
+  }
+  
+  #contact_icon:hover .nav_hover {
+    width: 55px;
+    height:55px;
+    display: block;
+  }
+  
+  #contact_icon #contact_current{
+    width: 55px;
+    height:55px;
+    display: block;
+  }
+  
+  .dishes{
+    padding: 15px 0;
+  }
+  
+  #dishes_icon .nav_hover {
+    display: none;
+  }
+  
+  #dishes_icon:hover .nav_normal {
+    display: none;
+  }
+  #dishes_icon:hover .nav_hover {
+    width: 50px;
+    height:50px;
+    display: block;
+  }
+  
+  .desserts{
+    padding: 15px 0;
+  }
+  
+  #desserts_icon .nav_hover {
+    display: none;
+  }
+  
+  #desserts_icon:hover .nav_normal {
+    display: none;
+  }
+  #desserts_icon:hover .nav_hover {
+    width: 50px;
+    height:50px;
+    display: block;
+  }
+  
+  .favorites{
+    padding: 15px 0;
+  }  
+  
+  #favorites_icon .nav_hover {
+    display: none;
+  }
+  
+  #favorites_icon:hover .nav_normal {
+    display: none;
+  }
+  #favorites_icon:hover .nav_hover {
+    width: 50px;
+    height:50px;
+    display: block;
+  }
+
+  .foodimages{
+    padding: 40px 0;
+    justify-content: start;
+    grid-template-columns: auto auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 25px;
 }
 
-#navcon{
-  background-color: #F8CABC;
-}
-
-#navdes{
-  background-color: #FABF9F;
-}
-
-#navfav{
-  background-color: #FFEBA5;
-}
-
-.nav img{
-  display: block;
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact{
-  padding: 60px 0 80px 0;
-}
-
-#contact_icon{
-  width: 50px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: red;
-  background-image: url("../images/icons/icons1.png");
-  border: solid black 1px;
-}
-
-#contact_icon:active{
-  background-color: yellow;
-}
-
-#contact_icon:hover{
-  background-color: yellow;
-  background-image: url("../images/icons/icons_color1.png");
-  -webkit-transition: all ease 1s;
-  -moz-transition: all ease 1s;
-  -o-transition: all ease 1s;
-  -ms-transition: all ease 1s;
-  transition: all ease 1s;
-}
-
-.dishes{
-  padding: 15px 0;
-}
-
-.desserts{
-  padding: 15px 0;
-}
-
-.favorites{
-  padding: 15px 0;
-}  
-
-/* Body  */
+/* Body tab */
 .content{
   padding: 80px 0 0 150px;
   text-align: left;
 }
 
-.foodimages{
-  padding: 40px 0;
-  display: grid;
-  justify-content: start;
-  grid-template-columns: auto auto auto;
-  grid-row-gap: 30px;
-  grid-column-gap: 25px;
+/* form tab */
+.entry::placeholder{
+  color: #afafaf ;
+  text-align: left;
 }
 
-/* Join me animation */
+/* Join me animation tab*/
 .container {
-      overflow: hidden;
-      height: 45px;
-  }
-  
-  .list {
-        padding-left: 195px;
-        text-align: left;
-        list-style: none;
-        -webkit-animation-name: change;
-        -webkit-animation-duration: 10s;
-        -webkit-animation-iteration-count: infinite;
-        animation-name: change;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-  }
-  .item {
-        font-size: 2.5em;
-        }
+  overflow: hidden;
+  height: 45px;
+}
 
-/* Gallery */
+.list {
+  padding-left: 195px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.item {
+  font-size: 2.5em;
+  }
+
+.signature{
+background-image: url("../images/signature.png");
+background-attachment: fixed;
+background-position: 90%;
+background-repeat: no-repeat;
+background-size: 150px auto;            
+}
+
+/* gallery tab*/
 .gallery{
   display: flex;
   justify-content: left;
@@ -411,7 +528,17 @@ h2{
 }
 
 }
+/* end of tablet view */
 
+/* Website View */
+@media all and (min-width: 1025px){
+.foodimages{
+  grid-template-columns: auto auto auto;
+}
+}
+/* End of website view */
+
+/* Page Loader */
 #loader{
   position: absolute;
   top: 40%;
@@ -437,4 +564,11 @@ h2{
   }
   75% { border-width: 3px;}
   100% { border-width: 10px;}
+}
+
+/* Reduce Animation */
+@media (prefers-reduced-motion: reduce){
+.list, #loader, .floating:hover, .bean_grow:hover{
+  animation: none;
+}
 }
