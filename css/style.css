@@ -211,6 +211,7 @@ input{
 
 button{
     border: #707070 solid 1px;
+    background-color: #ffffff;
     padding: 5px 20px;
     margin: 20px 0 0 0;
     font-family: 'Kefa', 'Helvetica', 'Calibri', 'Arial', sans-serif;
