@@ -15,14 +15,29 @@
     gtag('js', new Date());
     gtag('config', 'UA-160542334-1');
     </script>
+    <!-- preloader -->
+    <!-- <script src="https://kit.fontawesome.com/a1680fea87.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
 <main>
-<div id="loader" style="display:none;"></div>
-<div class="skip"><a href="#main">Skip to Main Content</a></div>
+<!-- <div class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+</div> -->
+<div class="skip"><a href="#skip">Skip to Main Content</a></div>
     <header>
     <div class="nav" id="navfav">
         <ul>
+            <li class="mobile_drop">
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                    <a href="contact.html">Contact</a>
+                    <a href="index.html">Dishes</a>
+                    <a href="desserts.html">Desserts</a>
+                    <a href="favorites.html">Favorites</a>
+                </div>
+            </li>
             <li class="contact">
                 <div id="contact_icon">
                     <a href="contact.html">
@@ -60,23 +75,9 @@
                 </div>
             </li>
         </ul>
-        <!-- <ul>
-            <li class="contact"><a href="contact.html" class="contact">
-                <div id="contact_icon"><img src="images/icons/icons1.png" alt="navigation icon of a chair for contact"></div>
-                </a></li>
-            <li class="dishes"> <a href="index.html" class="dishes">
-                <div id="dishes_icon"><img src="images/icons/icons2.png" alt="navigation icon of a food tray for main dish"></div>
-                </a></li>
-            <li class="desserts"><a href="desserts.html" class="desserts">
-                <div id="desserts_icon"><img src="images/icons/icons3.png" alt="navigation icon of a cookie for desserts"></div>
-                </a></li>
-            <li class="favorites"><a href="favorites.html" class="favorites">
-                <div id="favorites_icon"><img src="images/icons/icons4.png" alt="navigation icon of a star for favorites"></div>
-                </a></li>
-        </ul> -->
     </div>
     </header>
-    <div class="content" id="main">
+    <div class="content" id="skip">
         <h1>
             Favorites
         </h1>
@@ -87,7 +88,7 @@
         <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src="images/favorites/f1.jpg" class="floating" alt="Image of Beef Noodle Soup by Justin">
+                <img src="images/favorites/f1.jpg" alt="Image of Beef Noodle Soup by Justin">
                 </div>
                 <div class="flip-card-back">
                 <h2>by Justin</h2>
@@ -98,7 +99,7 @@
         <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src="images/favorites/f2.jpg" class="floating" alt="Image of Pineapple with Pork by Derek">
+                <img src="images/favorites/f2.jpg" alt="Image of Pineapple with Pork by Derek">
                 </div>
                 <div class="flip-card-back">
                 <h2>by Derek</h2>
@@ -109,7 +110,7 @@
         <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src="images/favorites/f3.jpg" class="floating" alt="Image of Congee by Jasmine">
+                <img src="images/favorites/f3.jpg" alt="Image of Congee by Jasmine">
                 </div>
                 <div class="flip-card-back">
                 <h2>by Jasmine</h2>
@@ -120,7 +121,7 @@
         <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src="images/favorites/f4.jpg" class="floating" alt="Image of Orange Cake by Vivian">
+                <img src="images/favorites/f4.jpg" alt="Image of Orange Cake by Vivian">
                 </div>
                 <div class="flip-card-back">
                 <h2>by Vivian</h2>
@@ -131,7 +132,7 @@
         <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src="images/favorites/f5.jpg" class="floating" alt="Image of Onigirazu by Vivian">
+                <img src="images/favorites/f5.jpg" alt="Image of Onigirazu by Vivian">
                 </div>
                 <div class="flip-card-back">
                 <h2>by Vivian</h2>
@@ -142,7 +143,7 @@
         <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src="images/favorites/f6.jpg" class="floating" alt="Image of Steak Dinner by Justin">
+                <img src="images/favorites/f6.jpg" alt="Image of Steak Dinner by Justin">
                 </div>
                 <div class="flip-card-back">
                 <h2>by Justin</h2>
@@ -153,7 +154,7 @@
         <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src="images/favorites/f7.jpg" class="floating" alt="Image of Chicken Soup by Justin">
+                <img src="images/favorites/f7.jpg" alt="Image of Chicken Soup by Justin">
                 </div>
                 <div class="flip-card-back">
                 <h2>by Justin</h2>
@@ -164,7 +165,7 @@
         <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src="images/favorites/f8.jpg" class="floating" alt="Image of Shrimp Pasta by Justin">
+                <img src="images/favorites/f8.jpg" alt="Image of Shrimp Pasta by Justin">
                 </div>
                 <div class="flip-card-back">
                 <h2>by Justin</h2>
