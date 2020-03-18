@@ -76,9 +76,9 @@ body{
   display: none;
 }
 
-.contact:hover, .dishes:hover, .desserts:hover, .favorites:hover{
+/* .contact:hover, .dishes:hover, .desserts:hover, .favorites:hover{
   text-decoration: underline;
-}
+} */
 
 
 a{
@@ -407,125 +407,137 @@ h2{
   display: none;
 }
 
-  .nav{
-    padding: 20px 10px;
-    height: 100%;
-    width: 70px; 
-    position: fixed;
-  }
+.nav{
+  padding: 20px 10px;
+  height: 100%;
+  width: 70px; 
+  position: fixed;
+}
 
-  .current{
-    padding: 15px;
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.1);
-    border: #575757 dashed 1px;
-  }
+.nav p{
+  display: none;
+}
+
+#navcon{
+  background-color: #F8CABC;
+}
+
+#navdes{
+  background-color: #FABF9F;
+}
+
+#navfav{
+  background-color: #FFEBA5;
+}
   
-  .nav p{
-    display: none;
-  }
+.nav img{
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+}
+
+.current{
+  padding: 15px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 3px 7px 0 rgba(0,0,0,0.1);
+  border: #575757 dashed 1px;
+}
   
-  #navcon{
-    background-color: #F8CABC;
-  }
+.current_icon{
+  margin: 0;
+}
+
+.current .nav_normal{
+  display: none;
+}
+
+.contact{
+  padding: 60px 0 80px 0;
+  display: block;
+}
+
+#contact_icon #current{
+  display: none;
+}
+
+#contact_icon .nav_hover {
+  display: none;
+}
+
+#contact_icon:hover .nav_normal {
+  display: none;
+}
+
+#contact_icon:hover .nav_hover {
+  display: block;
+}
+
+.dishes{
+  padding: 15px 0;
+  display: block;
+}
+
+#dishes_icon #current{
+  display: none;
+}
+
+#dishes_icon .nav_hover {
+  display: none;
+}
+
+#dishes_icon:hover .nav_normal {
+  display: none;
+}
+
+#dishes_icon:hover .nav_hover {
+  display: block;
+}
+
+.desserts{
+  padding: 15px 0;
+  display: block;
+}
+
+#desserts_icon #current{
+  display: none;
+}
+
+#desserts_icon .nav_hover {
+  display: none;
+}
+
+#desserts_icon:hover .nav_normal {
+  display: none;
+}
+
+#desserts_icon:hover .nav_hover {
+  display: block;
+}
   
-  #navdes{
-    background-color: #FABF9F;
-  }
-  
-  #navfav{
-    background-color: #FFEBA5;
-  }
-  
-  .nav img{
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: transparent;
-  }
-  
-  .contact{
-    padding: 60px 0 80px 0;
-    display: block;
-  }
-  
-  
-  #contact_icon .nav_hover {
-    display: none;
-  }
-  
-  #contact_icon:hover .nav_normal {
-    display: none;
-  }
-  
-  #contact_icon:hover .nav_hover {
-    width: 55px;
-    height:55px;
-    display: block;
-  }
-  
-  #contact_icon #contact_current{
-    width: 55px;
-    height:55px;
-    display: block;
-  }
-  
-  .dishes{
-    padding: 15px 0;
-    display: block;
-  }
-  
-  #dishes_icon .nav_hover {
-    display: none;
-  }
-  
-  #dishes_icon:hover .nav_normal {
-    display: none;
-  }
-  #dishes_icon:hover .nav_hover {
-    width: 50px;
-    height:50px;
-    display: block;
-  }
-  
-  .desserts{
-    padding: 15px 0;
-    display: block;
-  }
-  
-  #desserts_icon .nav_hover {
-    display: none;
-  }
-  
-  #desserts_icon:hover .nav_normal {
-    display: none;
-  }
-  #desserts_icon:hover .nav_hover {
-    width: 50px;
-    height:50px;
-    display: block;
-  }
-  
-  .favorites{
-    padding: 15px 0;
-    display: block;
-  }  
-  
-  #favorites_icon .nav_hover {
-    display: none;
-  }
-  
-  #favorites_icon:hover .nav_normal {
-    display: none;
-  }
-  #favorites_icon:hover .nav_hover {
-    width: 50px;
-    height:50px;
-    display: block;
-  }
+.favorites{
+  padding: 15px 0;
+  display: block;
+}  
+
+#favorites_icon #current{
+  display: none;
+}
+
+#favorites_icon .nav_hover {
+  display: none;
+}
+
+#favorites_icon:hover .nav_normal {
+  display: none;
+}
+
+#favorites_icon:hover .nav_hover {
+  display: block;
+}
 
   .foodimages{
     padding: 40px 0;
