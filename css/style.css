@@ -19,7 +19,9 @@ body{
 
 /* drop down  */
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
-/* https://www.a11ywithlindsey.com/blog/create-accessible-dropdown-navigation */
+
+/* accessible drop down
+https://css-tricks.com/solved-with-css-dropdown-menus/ */
 .dropbtn {
   background-color: transparent;
   color: #575757;
@@ -52,11 +54,11 @@ body{
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn, .dropdown:focus-within .dropbtn {
   background-color: transparent;
   text-decoration: underline;
   color: #575757;
