@@ -14,20 +14,66 @@ body{
   padding: 20px 0;
   text-align: center;
   background-color: #D9EDFF;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+}
+
+/* drop down  */
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+/* https://www.a11ywithlindsey.com/blog/create-accessible-dropdown-navigation */
+.dropbtn {
+  background-color: transparent;
+  color: #575757;
+  padding: 0 60px 20px;
+  font-size: 2em;
+  border: none;
+  /* cursor: pointer; */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #575757;
 }
 
 .current{
-  width: 100px;
+  /* width: 100px;
   margin-right: auto ;
   margin-left: auto;
-  padding: 7px;
+  padding: 7px; */
   background-color: white;
   border-radius: 15px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
-.dishes, .desserts, .favorites{
-  padding: 1px;
+.contact, .dishes, .desserts, .favorites{
+  display: none;
 }
 
 .contact:hover, .dishes:hover, .desserts:hover, .favorites:hover{
@@ -226,81 +272,82 @@ button:hover{
 
 /* Join Me Animation */
 
-  .container {
-      overflow: hidden;
-      height: 45px;
-  }
+.container {
+  overflow: hidden;
+  height: 45px;
+}
+
+.list {
+  padding-left: 145px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.item {
+  display: none;
+}
   
-  .list {
-        padding-left: 195px;
-        text-align: left;
-        list-style: none;
-        -webkit-animation-name: change;
-        -webkit-animation-duration: 10s;
-        -webkit-animation-iteration-count: infinite;
-        animation-name: change;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-  }
-  .item {
-        font-size: 2.5em;
-        }
-  
-  @-webkit-keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @-webkit-keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-    33.32%,45.98% {transform:translate3d(0,-50%,0);}
-    49.98%,62.64% {transform:translate3d(0,-75%,0);}
-    66.64%,79.3% {transform:translate3d(0,-50%,0);}
-    83.3%,95.96% {transform:translate3d(0,-25%,0);}
-  }
-  
-  @-o-keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @-o-keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-    33.32%,45.98% {transform:translate3d(0,-50%,0);}
-    49.98%,62.64% {transform:translate3d(0,-75%,0);}
-    66.64%,79.3% {transform:translate3d(0,-50%,0);}
-    83.3%,95.96% {transform:translate3d(0,-25%,0);}
-  }
-  
-  @-moz-keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @-moz-keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-    33.32%,45.98% {transform:translate3d(0,-50%,0);}
-    49.98%,62.64% {transform:translate3d(0,-75%,0);}
-    66.64%,79.3% {transform:translate3d(0,-50%,0);}
-    83.3%,95.96% {transform:translate3d(0,-25%,0);}
-  }
-  
-  @keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-    33.32%,45.98% {transform:translate3d(0,-50%,0);}
-    49.98%,62.64% {transform:translate3d(0,-75%,0);}
-    66.64%,79.3% {transform:translate3d(0,-50%,0);}
-    83.3%,95.96% {transform:translate3d(0,-25%,0);}
-  }
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-o-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-o-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-moz-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-moz-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
 
 /* Flip Card */
 .flip-card {
@@ -355,6 +402,10 @@ h2{
 /* tablet view */
 @media all and (min-width: 768px) {
   /* nav tab */
+.mobile_drop{
+  display: none;
+}
+
   .nav{
     padding: 20px 10px;
     height: 100%;
@@ -363,8 +414,11 @@ h2{
   }
 
   .current{
-    padding: 15px 100px 15px 15px;
-    width: 0;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.1);
+    border: #575757 dashed 1px;
   }
   
   .nav p{
@@ -394,6 +448,7 @@ h2{
   
   .contact{
     padding: 60px 0 80px 0;
+    display: block;
   }
   
   
@@ -419,6 +474,7 @@ h2{
   
   .dishes{
     padding: 15px 0;
+    display: block;
   }
   
   #dishes_icon .nav_hover {
@@ -436,6 +492,7 @@ h2{
   
   .desserts{
     padding: 15px 0;
+    display: block;
   }
   
   #desserts_icon .nav_hover {
@@ -453,6 +510,7 @@ h2{
   
   .favorites{
     padding: 15px 0;
+    display: block;
   }  
   
   #favorites_icon .nav_hover {
@@ -489,24 +547,8 @@ h2{
 }
 
 /* Join me animation tab*/
-.container {
-  overflow: hidden;
-  height: 45px;
-}
-
-.list {
-  padding-left: 195px;
-  text-align: left;
-  list-style: none;
-  -webkit-animation-name: change;
-  -webkit-animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-  animation-name: change;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-
 .item {
+  display: block;
   font-size: 2.5em;
   }
 
@@ -535,36 +577,62 @@ background-size: 150px auto;
 .foodimages{
   grid-template-columns: auto auto auto;
 }
+
+.current{
+  padding: 15px 50px 15px 15px;
+  box-shadow: none;
+  border: none;
+}
 }
 /* End of website view */
 
 /* Page Loader */
-#loader{
-  position: absolute;
-  top: 40%;
-  width: 70px;
-  height: 70px;
-  border-style: solid;
-  border-top-color: #D9EDFF;
-  border-right-color: #D9EDFF;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  box-sizing: border-box;
-  animation: rotate 3s ease-in-out infinite;
-  transform: rotate(-200deg)
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 */
+/* https://tobiasahlin.com/spinkit/ */
+/* .spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 200px auto;
 }
 
-@keyframes rotate {
-  0% { border-width: 10px; }
-  25% { border-width: 3px; }
-  50% { 
-    transform: rotate(115deg); 
-    border-width: 10px;
-  }
-  75% { border-width: 3px;}
-  100% { border-width: 10px;}
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(153, 205, 221);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
 }
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+#loading {
+  padding-top: 50px;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+} */
 
 /* Reduce Animation */
 @media (prefers-reduced-motion: reduce){
